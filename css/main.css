@@ -1,0 +1,61 @@
+/*change font size to em. */
+body {
+  background-color:tan;
+}
+.container {
+}
+.navbar {
+  border: 2px solid black;
+  height:70px;
+  width:90%;
+  margin:30px auto;
+  background-color:white;
+}
+
+.inner {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding: 0 30px;
+  height:100%;
+}
+.logo {
+
+}
+.navigation {
+  justify-content:space-around;
+}
+.navigation a {
+  font-size:20px;
+  text-decoration:none;
+  color:black;
+  padding:12px 10px;
+  height:100%;
+  transition:.5s;
+}
+.navigation a:hover{
+  background-color:#eaeaea8c;
+  transition:.5s;
+}
+.logo a:hover {
+  background-color:#eaeaea8c;
+  transition:.5s;
+}
+.banner {
+  display:flex;
+  justify-content:space-around;
+  margin:0 auto;
+  width:90%;
+}
+.banner img{
+  clip-path:polygon(0 0, 100% 0%, 100% 80%, 0 80%);
+}
+.bannerText {
+  color:#ffffffbf;
+  font-size:40px;
+  font-weight: bold;
+  text-align:center;
+  position:absolute;
+  letter-spacing: 2px;
+  transform: scaleX(1.2);
+}

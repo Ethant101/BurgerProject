@@ -1,14 +1,21 @@
 /*change font size to em. */
+/* 922B2D logo red color */
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color:tan;
+  display:flex;
+  justify-content:center;
 }
 .container {
+
 }
 .navbar {
   border: 2px solid black;
   height:70px;
   width:90%;
-  margin:30px auto;
+  margin:15px auto 30px auto;
   background-color:white;
 }
 
@@ -34,11 +41,12 @@ body {
   transition:.5s;
 }
 .navigation a:hover{
-  background-color:#eaeaea8c;
+  background-color:#dadfea;
   transition:.5s;
+  cursor:pointer;
 }
 .logo a:hover {
-  background-color:#eaeaea8c;
+  background-color:#dadfea;
   transition:.5s;
 }
 .banner {
@@ -48,7 +56,8 @@ body {
   width:90%;
 }
 .banner img{
-  clip-path:polygon(0 0, 100% 0%, 100% 80%, 0 80%);
+  box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+  border-radius: 15px;
 }
 .bannerText {
   color:#ffffffbf;
@@ -58,4 +67,31 @@ body {
   position:absolute;
   letter-spacing: 2px;
   transform: scaleX(1.2);
+}
+
+footer {
+  width:90%;
+  margin:15px auto 30px auto;
+  background-color:white;
+}
+.footmainnav {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding: 0 30px;
+  height:100%;
+}
+.footsubnav {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  padding: 0 30px;
+  height:100%;
+}
+.SocialMedia {
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  padding: 0 30px;
+  height:100%;
 }

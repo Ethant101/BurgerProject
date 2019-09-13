@@ -1,0 +1,185 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #F3EBE1;
+}
+.container {
+    width:100%;
+    height:100%;
+}
+#navbar {
+    width:100%;
+    height:65px;
+    border-bottom:2px solid #dadfea;
+    margin:0 auto;
+    position:sticky;
+    background-color: #F3EBE1;
+}
+.inner {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+}
+.inner a {
+    font-size:23px;
+    color: #21171C;
+    text-decoration:none;
+    transition:.39s;
+    border-radius:5px;
+    padding: 10px 5px;
+}
+.inner a:hover {
+    background-color:#dadfea
+}
+.headborders {
+    width:2px;
+    height:53px;
+    background-color:#e2d9d9;
+}
+.parallax {
+    /*margin-top:-21px; */
+    min-height: 700px;
+    background-attachment: fixed;
+    background-image: url("../images/burger-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0px 0px 18px 1px rgba(0,0,0,1);
+}
+.parallaxContent {
+    display:flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.titles {
+    display:flex;
+    flex-direction:column;
+    color:#fff3f3de;
+    align-items: center;
+
+}
+.titles h1 {
+    font-size: 60px;
+}
+.titles h2 {
+    font-size: 45px;
+}
+.titles h1, .titles h2{
+    padding:-10px 30px;
+
+}
+.btn {
+     margin:220px auto 0 auto;
+ }
+.btn button {
+    font-size:34px;
+    padding:34px;
+    border-radius: 16px;
+    /*background-color:#fff3f3de; */
+    background-color: #bdafafad;
+}
+.btn button:hover {
+    cursor:pointer;
+    color:#F38C00;
+    background-color: #fff3f3de;
+}
+/*menu stuff */
+#menu {
+    /*background: linear-gradient(135deg, rgba(124,114,102,1) 0%,rgba(255,255,255,1) 50%,rgba(124,114,102,1) 100%);
+*/
+    background-color:#F3EBE1;
+}
+
+.menuHead {
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+}
+.menuHead h1 {
+    font-size:60px;
+    border-bottom: 2px solid black;
+    padding:0 70px 15px 70px;
+}
+.menuContent {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.menuContent a {
+    text-decoration:none;
+}
+.menuContent a:hover {
+    background-color:#dadfea57;
+}
+.menuItem {
+    display: flex;
+    justify-content: center;
+}
+.menuimage {
+    color:#21171C;
+    font-size:100px;
+    padding: 20px;
+}
+.menuItemText h4, .menuItemText p{
+    text-decoration:none;
+    color:black;
+}
+
+
+/*location stuff*/
+.locationHead {
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+}
+.locationHead h1 {
+    font-size:60px;
+    border-bottom: 2px solid black;
+    padding:0 70px 15px 70px;
+}
+.locationContent {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+caption {
+    font-size:30px;
+    font-weight: bold;
+}
+table {
+    border:3px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+
+}
+
+/* arrow to get back to header */
+.backtotop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #dadfea;
+    border: 1px solid black;
+    text-decoration:none;
+}
+.backtotop .fas {
+    color:black;
+}
+.backtotop:hover {
+    background-color:grey;
+
+}
+.backtotop .fas:hover {
+    color:white;
+}
+

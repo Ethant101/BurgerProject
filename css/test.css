@@ -142,6 +142,9 @@ body {
     border-bottom: 2px solid black;
     padding:0 70px 15px 70px;
 }
+.locationpic img {
+    height:500px;
+}
 .locationContent {
     display:flex;
     flex-direction:column;

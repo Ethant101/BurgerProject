@@ -114,7 +114,7 @@ body {
   text-decoration:none;
 }
 .menuContent a:hover {
-  background-color:#dadfea57;
+  background-color:#79554730;
 }
 .menuItem {
   display: flex;
@@ -142,10 +142,32 @@ body {
   border-bottom: 2px solid black;
   padding:0 70px 15px 70px;
 }
+.locationpic img {
+  height:400px;
+  margin:0 20px;
+  transition: transform .2s;
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+}
+.locationpic img:hover{
+  transform:scale(1.1);
+}
 .locationContent {
   display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  /*
   flex-direction:column;
   align-items:center;
+  */
+}
+.positionstuff {
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:center;
+}
+.locationdesc:hover {
+  background-color: #79554730;
 }
 caption {
   font-size:30px;

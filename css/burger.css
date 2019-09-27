@@ -1,0 +1,36 @@
+.burgerMenuHead {
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+
+}
+.burgerMenuHead h1 {
+    font-size:60px;
+    border-bottom: 2px solid #2a2a2a;
+    padding:0 70px 15px 70px;
+}
+.burgerContent {
+    width:90%;
+    height:100%;
+    margin-left:30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items:center;
+}
+.burgerItems {
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#79554730;
+    border: 2px solid #a58c8c;
+    margin:10px;
+}
+.burgerItems div {
+    margin:8px;
+}
+.burgerItems img {
+    height:120px;
+}
+/* media get rid of pictures */

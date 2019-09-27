@@ -3,23 +3,26 @@
 <head>
     <title>Rockey Burger</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
     <script src="https://kit.fontawesome.com/0ec1456ef5.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="Utf-8"/>
 </head>
+<body>
 <div class="container">
+    <!-- Navbar breaks phone margin viewing  use media query to fix by getting rid of head items
+    or making text smaller -->
     <div id="navbar">
         <div class="inner">
-            <a href="#menu">Menu</a>
+            <a class="navBig" href="#menu">Menu</a>
             <div class="headborders"></div>
-            <a href="#locations">Locations</a>
+            <a class="navBig" href="#locations">Locations</a>
             <div class="logo">
-                <a href="index.html"><img src="images/rockeyburgers02-logo.png" height="65px"></a>
+                <a href="index.html"><img src="../images/rockeyburgers02-logo.png" height="65px"></a>
             </div>
-            <a href="#">Jobs</a>
+            <a class="navBig" href="jobs.html">Jobs</a>
             <div class="headborders"></div>
-            <a href="#">About</a>
+            <a class="navBig" href="about.html">About</a>
         </div>
     </div>
     <div class="parallax">
@@ -40,16 +43,16 @@
             <h3>You Hungry?</h3>
         </div>
         <div class="menuContent">
-            <a href="#"><div class="menuItem">
+            <a href="burger.html"><div class="menuItem">
                 <div class="menuimage">
-                    <img src="images/burgerIcon.png" alt="Burgericon" height="130px">
+                    <img src="../images/burgerIcon.png" alt="Burgericon" height="130px">
                 </div>
                 <div class="menuItemText">
                     <h4>Burgers</h4>
                     <p>Our burgers are cooked medium & are very juicy.</p>
                 </div>
             </div></a>
-            <a href="#"><div class="menuItem">
+            <a href="chicken.html"><div class="menuItem">
                 <div class="menuimage">
                     <i class="fas fa-drumstick-bite"></i>
                 </div>
@@ -58,18 +61,18 @@
                     <p>Natural free range chicken breast with chipotle aioli.</p>
                 </div>
             </div></a>
-            <a href="#"><div class="menuItem">
+            <a href="sides.html"><div class="menuItem">
                 <div class="menuimage">
-                    <img src="images/fryIcon.png" alt="fryicon" height="100px">
+                    <img src="../images/fryIcon.png" alt="fryicon" height="100px">
                 </div>
                 <div class="menuItemText">
                     <h4>Fries</h4>
                     <p>We got all the fries you will ever need.</p>
                 </div>
             </div></a>
-            <a href="#"><div class="menuItem">
+            <a href="dessert.html"><div class="menuItem">
                 <div class="menuimage">
-                    <img src="images/dessertIcon.png" alt="desserticon" height="100px">
+                    <img src="../images/dessertIcon.png" alt="desserticon" height="100px">
                 </div>
                 <div class="menuItemText">
                     <h4>Dessert</h4>
@@ -78,13 +81,13 @@
             </div></a>
         </div>
     </div>
-    <div id="locations">
+    <div id="locations"> <!-- Change to iframe -->
         <div class="locationHead">
             <h1>Locations</h1>
         </div>
         <div class="locationContent">
             <div class="locationpic">
-                <img src="images/maps.png">
+                <img src="../images/maps.png">
             </div>
             <div class="positionstuff">
                 <div class="locationdesc">
@@ -151,10 +154,71 @@
         </div>
     </div>
 
-
-
-    <div class="backtotop">
-        <a href="#navbar"><i class="fas fa-angle-double-up"></i></a>
+    <div id="subscribe">
+        <div class="subscribeHead">
+            <h1>Subscribe Today!</h1>
+            <h3>Don't miss any discounts</h3>
+        </div>
+        <div class="formBoi">
+            <form method="POST">
+                <div>
+                    <label for="fullName">First Name: </label><input id="fullName" type="text" placeholder="Full Name" name="fullName">
+                </div>
+                <div>
+                    <label for="Email">Email: </label><input id="Email" type="Email" placeholder="@gmail.com" name="Email">
+                </div>
+                <div>
+                    <label for="number">Phone Number: </label><input id="number" type="number" name="number">
+                </div>
+                Receive Email coupons and deals?
+                <div>
+                    <label for="Sendmaily">Yes: </label><input id="Sendmaily" type="radio" name="sendMail" value="Receive mail?" checked>
+                </div>
+                <div>
+                    <label for="Sendmailn">No: </label><input id="Sendmailn" type="radio" name="sendMail" value="Receive Mail?">
+                </div>
+                <div>
+                    <input type="reset" value="reset">
+                </div>
+                <div>
+                    <input type="Submit" value="submit">
+                </div>
+            </form>
+        </div>
     </div>
+
+    <div class="about">
+
+    </div>
+
+
+    <div class="footer">
+        <div class="leftfoot">
+            <h1>Stay Connected</h1>
+            <div class="socialMedia">
+                <i class="fab fa-reddit reddit"></i>
+                <i class="fab fa-youtube youtube"></i>
+                <a href="http://www.facebook.com/keyburgers"><i class="fab fa-facebook-f facebook"></i></a>
+                <a href="http://www.twitter.com/keyburgers"><i class="fab fa-twitter twitter"></i></a>
+                <i class="fab fa-instagram instagram"></i>
+            </div>
+            <div class="copyright">
+                ©Copyright 2019 Rockey Burger, Inc. All rights reserved.
+            </div>
+        </div>
+        <div class="rightfoot">
+            <div class="rightfootinner">
+                <h1><a href="jobs.html">Jobs</a></h1>
+                <h1><a href="about.html">About</a></h1>
+            </div>
+        </div>
+
+
+        <a href="#navbar"><div class="backtotop">
+            <span title="Back to Top"><i class="fas fa-angle-double-up"></i></span>
+        </div></a>
+    </div>
+
 </div>
+</body>
 </html>
